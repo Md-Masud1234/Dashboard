@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="min-h-screen flex flex-col">
+        <!-- Navbar -->
+        <nav class="bg-blue-600 text-white p-4">
+            <div class="container mx-auto flex justify-between">
+                <h1 class="text-xl font-bold">Dashboard</h1>
+                <button id="themeToggle" class="bg-blue-500 px-3 py-1 rounded">Toggle Theme</button>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="flex-grow container mx-auto p-4">
+            <!-- Bar Chart Section -->
+            <div class="bg-white p-4 rounded shadow mb-4">
+                <h2 class="font-bold text-lg mb-2">Top 10 Countries by GDP</h2>
+                <canvas id="barChart" width="400" height="200"></canvas>
+            </div>
+            <!-- Line Chart Section -->
+            <div class="bg-white p-4 rounded shadow">
+                <h2 class="font-bold text-lg mb-2">GDP Growth Over the Past 50 Years</h2>
+                <canvas id="lineChart" width="400" height="200"></canvas>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-blue-600 text-white p-4 text-center">
+            © 2024 Dashboard Example
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
