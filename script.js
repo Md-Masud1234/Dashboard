@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Data for the charts
     const gdpData = {
         countries: [
-            "United States", "China", "Japan", "Germany", "India",
+            "United States Of America", "China", "Japan", "Germany", "India",
             "United Kingdom", "France", "Italy", "Brazil", "Canada"
         ],
         gdp: [21137, 14140, 5155, 3846, 2875, 2825, 2716, 2001, 1839, 1736],
